@@ -1,0 +1,7 @@
+{
+  "main": "./integration.js",
+  "name": "StyleGuide",
+  "description": "Demo Integration to show how to use built in styles from Polarity Web 3.x",
+  "version": "1.0.0",
+  "private": true
+}

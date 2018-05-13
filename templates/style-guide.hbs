@@ -1,0 +1,249 @@
+<p>
+    The Style Guide integration provides an easy way for integration developers to see the pre-defined CSS classes that can be used to style their integrations.
+</p>
+<h1>Section Headers</h1>
+<p>
+    Section Headers should be styled using the <span class="class">p-title</span> class.
+</p>
+
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;padding:0;"><pre style="margin: 0; line-height: 125%"><span
+        style="color: #000080; font-weight: bold">&lt;h1</span> <span style="color: #FF0000">class=</span><span
+        style="color: #0000FF">&quot;p-title&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;i</span> <span style="color: #FF0000">class=</span><span
+            style="color: #0000FF">&quot;fa fa-fw fa-info&quot;</span><span style="color: #000080; font-weight: bold">&gt;&lt;/i&gt;</span> Info
+<span style="color: #000080; font-weight: bold">&lt;/h1&gt;</span>
+</pre>
+</div>
+
+
+<div class="example">
+    <span class="example">Example:</span>
+    <h1 class="p-title">
+        <i class="fa fa-fw fa-info"></i> Section Header Example
+    </h1>
+</div>
+
+
+<h1>Data (Key - Value)</h1>
+<p>
+    The section header should then be followed by data in a key-value format. Each piece of data should be on its own
+    line. The key value should be styled using the <span class="class">p-key</span> class and the value should be styled
+    using the <span class="class">p-value</span> class.
+</p>
+
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;padding:0;"><pre style="margin: 0; line-height: 125%"><span
+        style="color: #000080; font-weight: bold">&lt;div&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;span</span> <span style="color: #FF0000">class=</span><span
+            style="color: #0000FF">&quot;p-key&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>Entity Name:<span
+            style="color: #000080; font-weight: bold">&lt;/span&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;span</span> <span style="color: #FF0000">class=</span><span
+            style="color: #0000FF">&quot;p-value&quot;</span><span
+            style="color: #000080; font-weight: bold">&gt;</span>{{block.data.details.value}}<span
+            style="color: #000080; font-weight: bold">&lt;/span&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;div&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;span</span> <span style="color: #FF0000">class=</span><span
+            style="color: #0000FF">&quot;p-key&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>Entity Type:<span
+            style="color: #000080; font-weight: bold">&lt;/span&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;span</span> <span style="color: #FF0000">class=</span><span
+            style="color: #0000FF">&quot;p-value&quot;</span><span
+            style="color: #000080; font-weight: bold">&gt;</span>{{block.data.details.type}}<span
+            style="color: #000080; font-weight: bold">&lt;/span&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+</div>
+
+<div class="example">
+    <span class="example">Example:</span>
+    <div>
+        <span class="p-key">Entity Name:</span>
+        <span class="p-value">{{block.data.details.value}}</span>
+    </div>
+    <div>
+        <span class="p-key">Entity Type:</span>
+        <span class="p-value">{{block.data.details.type}}</span>
+    </div>
+</div>
+
+
+
+<h1>Links</h1>
+<p>
+    External links (links that will open in an external browser) should be styled using the <span
+        class="class">p-link</span> class. Note that external links are styled the same throughout the Polarity
+    application. Integration developers are encouraged to follow the defined link style so users know what behavior to
+    expect when they see text styled as a link. Links are styled in blue.
+</p>
+
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;padding:0;"><pre style="margin: 0; line-height: 125%"><span
+        style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">href=</span><span
+        style="color: #0000FF">&quot;https://google.com&quot;</span> <span style="color: #FF0000">class=</span><span
+        style="color: #0000FF">&quot;p-link&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>google.com<span
+        style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+
+
+<div class="example">
+    <span class="example">Example:</span>
+    <a href="https://google.com" class="p-link">Example link to google.com</a>
+</div>
+
+
+
+<h1>Action Items</h1>
+<p>
+    Action items are pieces of text that trigger an action within the component. They do not open any external actions
+    (this should be reserved for <span
+        class="class">p-link</span>). Action items are styled in green using the <span
+        class="class">p-action</span> class.
+</p>
+
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;padding:0;"><pre style="margin: 0; line-height: 125%"><span
+        style="color: #000080; font-weight: bold">&lt;span</span> <span style="color: #FF0000">class=</span><span
+        style="color: #0000FF">&quot;p-action&quot;</span> <span style="color: #008080">&#123;&#123;</span>action <span
+        style="color: #0000FF">&quot;expand&quot;</span><span style="color: #008080">}}</span><span
+        style="color: #000080; font-weight: bold">&gt;</span>
+    Click to <span style="color: #008080">&#123;&#123;</span><span
+            style="color: #a61717; background-color: #e3d2d2">#</span><span
+            style="color: #000080; font-weight: bold">if</span> isExpanded<span
+            style="color: #008080">}}</span>Hide<span style="color: #008080">\{{</span><span
+            style="color: #000080; font-weight: bold">else</span><span style="color: #008080">}}</span>Expand<span
+            style="color: #008080">&#123;&#123;</span>/<span style="color: #000080; font-weight: bold">if</span><span
+            style="color: #008080">}}</span>!
+<span style="color: #000080; font-weight: bold">&lt;/span&gt;</span>
+<span style="color: #008080">&#123;&#123;</span><span style="color: #a61717; background-color: #e3d2d2">#</span><span
+            style="color: #000080; font-weight: bold">if</span> isExpanded<span style="color: #008080">}}</span>
+    <span style="color: #000080; font-weight: bold">&lt;div</span> <span style="color: #FF0000">class=</span><span
+            style="color: #0000FF">&quot;expanded&quot;</span><span
+            style="color: #000080; font-weight: bold">&gt;</span>
+        Hello World!
+    <span style="color: #000080; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008080">&#123;&#123;</span>/<span style="color: #000080; font-weight: bold">if</span><span
+            style="color: #008080">}}</span>
+</pre>
+</div>
+
+
+<div class="example">
+    <span class="example">Example:</span>
+    <span class="p-action" {{action "expand"}}>
+    Click to {{#if isExpanded}}Hide{{else}}Expand{{/if}}!
+</span>
+    {{#if isExpanded}}
+        <div class="expanded">
+            Hello World!
+        </div>
+    {{/if}}
+</div>
+
+
+
+<h1>Tables</h1>
+<p>
+    Tables should have the <span class="class">p-table</span> class added to the &lt;table&gt; element.
+</p>
+
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;padding:0;"><pre style="margin: 0; line-height: 125%"><span
+        style="color: #000080; font-weight: bold">&lt;table</span> <span style="color: #FF0000">class=</span><span
+        style="color: #0000FF">&quot;p-table&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;thead&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;th&gt;</span>Header 1<span
+            style="color: #000080; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;th&gt;</span>Header 2<span
+            style="color: #000080; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;th&gt;</span>Header 3<span
+            style="color: #000080; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;/thead&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;tbody&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;tr&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 1A<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 1B<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 1C<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;/tr&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;tr&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 2A<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 2B<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 2C<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;/tr&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;tr&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 3A<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 3B<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #000080; font-weight: bold">&lt;td&gt;</span>Row 3C<span
+            style="color: #000080; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #000080; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;/tbody&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+
+<div class="example">
+    <span class="example">Example:</span>
+    <table class="p-table">
+        <thead>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Row 1A</td>
+            <td>Row 1B</td>
+            <td>Row 1C</td>
+        </tr>
+        <tr>
+            <td>Row 2A</td>
+            <td>Row 2B</td>
+            <td>Row 2C</td>
+        </tr>
+        <tr>
+            <td>Row 3A</td>
+            <td>Row 3B</td>
+            <td>Row 3C</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<h1>Colors</h1>
+<p>
+    The following class colors can be used to change the text color.
+</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;padding:0;"><pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-black&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-black<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-grey&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-grey<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-white&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-white<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-green&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-green<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-red&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-red<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-yellow&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-yellow<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;p</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;p-orange&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>p-orange<span style="color: #000080; font-weight: bold">&lt;/p&gt;</span>
+</pre></div>
+
+
+<div class="example color-examples">
+    <span class="example">Example:</span>
+
+<p class="p-black">p-black</p>
+<p class="p-grey">p-grey</p>
+<p class="p-white grey-bg">p-white</p>
+<p class="p-green">p-green</p>
+<p class="p-red">p-red</p>
+<p class="p-yellow">p-yellow</p>
+<p class="p-orange">p-orange</p>
+</div>
+
